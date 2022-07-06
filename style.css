@@ -7,12 +7,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.section {
-  height: 100vh;
-  margin-top: 80px;
-  scroll-margin-top: 80px;
-}
-
 .nav {
   display: flex;
   align-items: center;
@@ -48,16 +42,16 @@ html {
   border-bottom: 3px solid red;
 }
 
-.home-message {
-  text-align: center;
+.section {
+  height: 100vh;
+  scroll-margin-top: 80px;
 }
-
-h1 {
-  text-align: center;
+.section--one {
+  background-color: rgb(50, 100, 150);
+  margin-top: 80px;
 }
-
-.contact-form {
-  text-align: center;
+.section--three {
+  background-color: pink;
 }
 
 .projects {
@@ -72,6 +66,18 @@ h1 {
   margin: 5px;
 }
 
+h1 {
+  text-align: center;
+}
+
 h3 {
+  text-align: center;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+.home-message {
   text-align: center;
 }

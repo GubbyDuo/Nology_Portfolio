@@ -5,7 +5,7 @@ window.onscroll = function () {
     var current = "";
 
     Object.keys(sections).forEach((section) => {
-        if (window.pageYOffset >= sections[section].offsetTop - 800) {
+        if (window.pageYOffset >= sections[section].offsetTop - 500) {
             current = sections[section].getAttribute("id");
             console.log("window offset:" + window.pageYOffset);
             console.log("section offset:" + sections[section].offsetTop);
