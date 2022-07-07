@@ -12,59 +12,80 @@
         <nav class="nav">
             <div class="navbar navbar--top">
                 <div class="navbar navbar--item">
-                    <a class="home navbar navbar--link active" href="#home"
+                    <a
+                        class="scrollHome navbar navbar--link active"
+                        href="#scrollHome"
                         >Home</a
                     >
                 </div>
                 <div class="navbar navbar--item">
-                    <a class="projects navbar navbar--link" href="#projects"
-                        >Projects</a
+                    <a
+                        class="scrollSkills navbar navbar--link"
+                        href="#scrollSkills"
+                        >Skills</a
                     >
                 </div>
                 <div class="navbar navbar--item">
-                    <a class="contact navbar navbar--link" href="#contact"
+                    <a
+                        class="scrollContact navbar navbar--link"
+                        href="#scrollContact"
                         >Contact</a
                     >
                 </div>
             </div>
         </nav>
-        <section class="section section--one" id="home">
-            <h1>Home</h1>
-            <p class="home-message">Welcome to my portfolio</p>
+        <section class="section section--one" id="scrollHome">
+            <div class="home">
+                <h1 class="home--heading">Samuel Gubbins</h1>
+                <p class="home-message">Junior Full Stack Developer</p>
+            </div>
         </section>
-        <section class="section section--two" id="projects">
-            <h1>Projects</h1>
-            <h3>Feel free to browse some of my projects</h3>
-            <div class="projects projects--gallery">
-                <div class="projects projects--items">
+        <section class="section section--two" id="scrollSkills">
+            <h2>Some of my skills include:</h2>
+            <div class="skills skills--gallery">
+                <div class="skills skills--container">
                     <img
-                        class="projects--image"
-                        src="https://via.placeholder.com/400x300"
+                        class="skills--logo"
+                        src="/Images/CsharpLogo.png"
                         alt=""
                     />
+                    <p>C#</p>
+                </div>
+
+                <div class="skills skills--container">
                     <img
-                        class="projects--image"
-                        src="https://via.placeholder.com/400x300"
+                        class="skills--logo"
+                        src="/Images/react_logo.png"
                         alt=""
                     />
+                    <p>React</p>
+                </div>
+
+                <div class="skills skills--container">
+                    <img class="skills--logo" src="/Images/JsLogo.png" alt="" />
+                    <p>Javascript</p>
+                </div>
+
+                <div class="skills skills--container">
                     <img
-                        class="projects--image"
-                        src="https://via.placeholder.com/400x300"
+                        class="skills--logo"
+                        src="/Images/SQLLogo.png"
                         alt=""
                     />
+                    <p>SQL</p>
+                </div>
+
+                <div class="skills skills--container">
                     <img
-                        class="projects--image"
-                        src="https://via.placeholder.com/400x300"
+                        class="skills--logo"
+                        src="/Images/Git-Logo.png"
                         alt=""
                     />
-                    <br />
-                    <a href="https://github.com/GubbyDuo"
-                        >Click here for my github</a
-                    >
+                    <p>Git</p>
                 </div>
             </div>
         </section>
-        <section class="section section--three" id="contact">
+        <section class="section section--three" id="scrollContact">
             <h1>Contact</h1>
             <div class="contact-form">
                 <h3>

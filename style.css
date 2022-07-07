@@ -42,27 +42,64 @@ html {
   border-bottom: 3px solid red;
 }
 
+.home {
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.home--heading {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
 .section {
+  display: flex;
   height: 100vh;
   scroll-margin-top: 80px;
 }
 .section--one {
+  align-items: center;
+  justify-content: center;
   background-color: rgb(50, 100, 150);
   margin-top: 80px;
+}
+.section--two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .section--three {
   background-color: pink;
 }
 
-.projects {
+.skills {
   justify-content: center;
   display: flex;
 }
-.projects--items {
+.skills--items {
   width: 50%;
   flex-wrap: wrap;
 }
-.projects--image {
+.skills--logo {
+  height: 64px;
+  width: 64px;
+}
+.skills--gallery {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 30%;
+}
+.skills--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.skills--image {
   margin: 5px;
 }
 
