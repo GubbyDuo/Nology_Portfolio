@@ -40,7 +40,7 @@ html {
   color: black;
 }
 .navbar--link.active {
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid rgb(255, 173, 21);
 }
 
 .home {
@@ -68,7 +68,7 @@ html {
 .section--one {
   align-items: center;
   justify-content: center;
-  background-color: rgb(50, 100, 150);
+  background-color: rgb(55, 133, 211);
   margin-top: 80px;
 }
 .section--two {
@@ -78,7 +78,15 @@ html {
   justify-content: center;
 }
 .section--three {
-  background-color: pink;
+  background-color: rgb(55, 133, 211);
+  flex-direction: column;
+  justify-content: center;
+}
+.section--four {
+  height: 150vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .skills {
@@ -102,7 +110,7 @@ html {
   width: 64px;
 }
 .skills--logo:hover {
-  background-color: gray;
+  background-color: rgb(64, 127, 136);
 }
 .skills--gallery {
   justify-content: space-between;
@@ -124,13 +132,29 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.about-me--about {
+  display: flex;
   width: 100%;
   flex-direction: column;
 }
+.about-me--contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
 .about-me--para {
-  width: 35%;
-  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
   font-family: "Libre Baskerville", serif;
+}
+.about-me--para--text {
+  text-align: center;
+  width: 35%;
 }
 .about-me--logo {
   display: flex;
@@ -146,6 +170,34 @@ html {
 .about-me--logo--image {
   width: 32px;
   height: 32px;
+}
+
+.project-gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.project-image {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+.project-row {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: 20px;
+}
+.project-row--text {
+  width: 50%;
+  text-align: center;
+}
+.project-row--right {
+  justify-content: flex-end;
+}
+.project-row--left {
+  justify-content: flex-start;
 }
 
 h1 {

@@ -39,7 +39,7 @@ html {
         color: black;
 
         &.active {
-            border-bottom: 3px solid red;
+            border-bottom: 3px solid rgb(255, 173, 21);
         }
     }
 }
@@ -69,7 +69,7 @@ html {
     &--one {
         align-items: center;
         justify-content: center;
-        background-color: rgb(50, 100, 150);
+        background-color: rgb(55, 133, 211);
 
         margin-top: 80px;
     }
@@ -81,7 +81,15 @@ html {
         justify-content: center;
     }
     &--three {
-        background-color: pink;
+        background-color: rgb(55, 133, 211);
+        flex-direction: column;
+        justify-content: center;
+    }
+    &--four {
+        height: 150vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
@@ -103,7 +111,7 @@ html {
     }
     &--logo {
         &:hover {
-            background-color: gray;
+            background-color: rgb(64, 127, 136);
         }
 
         height: 64px;
@@ -131,13 +139,29 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    &--about {
+        display: flex;
         width: 100%;
         flex-direction: column;
     }
+    &--contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+    }
     &--para {
-        width: 35%;
-        text-align: center;
+        display: flex;
+        width: 100%;
+        justify-content: center;
         font-family: "Libre Baskerville", serif;
+        &--text {
+            text-align: center;
+            width: 35%;
+        }
     }
     &--logo {
         display: flex;
@@ -152,6 +176,35 @@ html {
         &--image {
             width: 32px;
             height: 32px;
+        }
+    }
+}
+.project {
+    &-gallery {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    &-image {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    &-row {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        margin: 20px;
+        &--text {
+            width: 50%;
+            text-align: center;
+        }
+        &--right {
+            justify-content: flex-end;
+        }
+        &--left {
+            justify-content: flex-start;
         }
     }
 }
