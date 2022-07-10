@@ -32,8 +32,9 @@ html {
     }
 
     &--link {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Roboto Slab", serif;
         font-size: 20px;
+        font-weight: bold;
         text-decoration: none;
         color: black;
 
@@ -48,11 +49,17 @@ html {
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
-}
-.home--heading {
-    font-size: 50px;
-    margin-bottom: 10px;
-    //font-family: "Courier New", Courier, monospace;
+
+    &--heading {
+        font-size: 70px;
+        margin-bottom: 10px;
+        font-family: "League Spartan", sans-serif;
+    }
+
+    &--message {
+        font-size: 16x;
+        font-family: "Libre Baskerville", serif;
+    }
 }
 
 .section {
@@ -85,8 +92,19 @@ html {
         width: 50%;
         flex-wrap: wrap;
     }
+    &--subtext {
+        height: 200px;
+        width: 30%;
+        font-family: "Libre Baskerville", serif;
+    }
 
+    &--heading {
+        margin-bottom: 70px;
+    }
     &--logo {
+        &:hover {
+            background-color: gray;
+        }
         height: 64px;
         width: 64px;
     }
@@ -100,6 +118,7 @@ html {
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+        font-family: "Roboto Slab", serif;
     }
     &--image {
         margin: 5px;

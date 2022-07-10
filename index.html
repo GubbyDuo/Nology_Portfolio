@@ -5,6 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&family=Libre+Baskerville&family=Roboto+Slab:wght@300&display=swap"
+            rel="stylesheet"
+        />
         <script type="text/javascript" src="index.js"></script>
         <title>Sam's Portfolio</title>
     </head>
@@ -37,16 +43,18 @@
         <section class="section section--one" id="scrollHome">
             <div class="home">
                 <h1 class="home--heading">Samuel Gubbins</h1>
-                <p class="home-message">Junior Full Stack Developer</p>
+                <p class="home--message">Junior Full Stack Developer</p>
             </div>
         </section>
         <section class="section section--two" id="scrollSkills">
-            <h2>Some of my skills include:</h2>
+            <h2 class="skills--heading">Some of my skills include:</h2>
             <div class="skills skills--gallery">
                 <div class="skills skills--container">
                     <img
+                        onclick="iconClick(this.id)"
+                        id="cSharpIcon"
                         class="skills--logo"
-                        src="/Images/CsharpLogo.png"
+                        src="./Images/CsharpLogo.png"
                         alt=""
                     />
                     <p>C#</p>
@@ -54,22 +62,32 @@
 
                 <div class="skills skills--container">
                     <img
+                        onclick="iconClick(this.id)"
+                        id="reactIcon"
                         class="skills--logo"
-                        src="/Images/react_logo.png"
+                        src="./Images/react_logo.png"
                         alt=""
                     />
                     <p>React</p>
                 </div>
 
                 <div class="skills skills--container">
-                    <img class="skills--logo" src="/Images/JsLogo.png" alt="" />
+                    <img
+                        onclick="iconClick(this.id)"
+                        id="jsIcon"
+                        class="skills--logo"
+                        src="./Images/Js-Logo.png"
+                        alt=""
+                    />
                     <p>Javascript</p>
                 </div>
 
                 <div class="skills skills--container">
                     <img
+                        onclick="iconClick(this.id)"
+                        id="sqlIcon"
                         class="skills--logo"
-                        src="/Images/SQLLogo.png"
+                        src="./Images/SQLLogo.png"
                         alt=""
                     />
                     <p>SQL</p>
@@ -77,13 +95,16 @@
 
                 <div class="skills skills--container">
                     <img
+                        onclick="iconClick(this.id)"
+                        id="gitIcon"
                         class="skills--logo"
-                        src="/Images/Git-Logo.png"
+                        src="./Images/Git-Logo.png"
                         alt=""
                     />
                     <p>Git</p>
                 </div>
             </div>
+            <div class="skills--subtext" id="skillsText"></div>
         </section>
         <section class="section section--three" id="scrollContact">
             <h1>Contact</h1>

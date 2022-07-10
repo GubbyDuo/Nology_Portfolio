@@ -1,5 +1,6 @@
 const sections = document.getElementsByClassName("section");
 let navLinks = document.getElementsByClassName("navbar--link");
+let clickedIcon = "";
 
 window.onscroll = function () {
     var current = "";
@@ -21,3 +22,69 @@ window.onscroll = function () {
         }
     });
 };
+
+function iconClick(iconId) {
+    let iconClickText = "";
+    switch (iconId) {
+        case "reactIcon":
+            iconClickText =
+                "I started learning React.Js in 2019 during my Diploma of Software Development. Since then, I have developped a lot more skills in Javascript and have come to revise and perfect my knowledge of React during my time at _Nology";
+            if (clickedIcon) {
+                console.log(clickedIcon);
+                document.getElementById(clickedIcon).style.backgroundColor =
+                    "inherit";
+            }
+            document.getElementById(iconId).style.backgroundColor = "gray";
+            break;
+        case "cSharpIcon":
+            iconClickText =
+                "I have used C# in both ASP.Net MVC for web design and in Unity for video game development both of which were useful for Tafe courses I have completed.";
+            if (clickedIcon) {
+                console.log(clickedIcon);
+                document.getElementById(clickedIcon).style.backgroundColor =
+                    "inherit";
+            }
+            document.getElementById(iconId).style.backgroundColor = "gray";
+            break;
+        case "jsIcon":
+            iconClickText =
+                "Javascript has been very useful in both my courses and my own personal projects. Javascript was the first language I tried to use when I was a kid, and is now the language I have used the most.";
+            if (clickedIcon) {
+                console.log(clickedIcon);
+                document.getElementById(clickedIcon).style.backgroundColor =
+                    "inherit";
+            }
+            document.getElementById(iconId).style.backgroundColor = "gray";
+            break;
+        case "sqlIcon":
+            iconClickText =
+                "I have used SQL in both my Tafe courses and my personal projects. I really enjoy implementing data into other languages to see my projects automate themselves.";
+            if (clickedIcon) {
+                console.log(clickedIcon);
+                document.getElementById(clickedIcon).style.backgroundColor =
+                    "inherit";
+            }
+            document.getElementById(iconId).style.backgroundColor = "gray";
+            break;
+        case "gitIcon":
+            iconClickText =
+                "I started using Git during one of my Tafe courses, and at the time it was very confusing and often frustrating. Since then however, I have learnt how to properly make use of it, and now use it for all projects I work on.";
+            if (clickedIcon) {
+                console.log(clickedIcon);
+                document.getElementById(clickedIcon).style.backgroundColor =
+                    "inherit";
+            }
+            document.getElementById(iconId).style.backgroundColor = "gray";
+            break;
+        default:
+            break;
+    }
+    if (clickedIcon == iconId) {
+        iconClickText = "";
+        clickedIcon = "";
+        document.getElementById(iconId).style.backgroundColor = "inherit";
+    } else {
+        clickedIcon = iconId;
+    }
+    document.getElementById("skillsText").innerHTML = iconClickText;
+}
