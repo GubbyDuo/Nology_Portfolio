@@ -12,10 +12,20 @@ html {
   align-items: center;
   height: 80px;
   background-color: rgb(107, 201, 245);
-  justify-content: flex-end;
   position: fixed;
   top: 0;
-  width: 100%;
+}
+@media only screen and (min-width: 800px) {
+  .nav {
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 801px) {
+  .nav {
+    justify-content: center;
+    width: 100vw;
+  }
 }
 
 .navbar {
@@ -31,6 +41,11 @@ html {
   margin: 0px 1px;
   height: 50px;
   width: 100%;
+}
+@media only screen and (max-width: 800px) {
+  .navbar--item {
+    margin: 10%;
+  }
 }
 .navbar--link {
   font-family: "Roboto Slab", serif;
@@ -77,16 +92,31 @@ html {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 800px) {
+  .section--two {
+    height: 150vh;
+  }
+}
 .section--three {
   background-color: rgb(55, 133, 211);
   flex-direction: column;
   justify-content: center;
+}
+@media only screen and (max-width: 800px) {
+  .section--three {
+    height: 150vh;
+  }
 }
 .section--four {
   height: 150vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media only screen and (max-width: 800px) {
+  .section--four {
+    height: 300vh;
+  }
 }
 
 .skills {
@@ -102,6 +132,11 @@ html {
   width: 30%;
   font-family: "Libre Baskerville", serif;
 }
+@media only screen and (max-width: 800px) {
+  .skills--subtext {
+    font-size: 14px;
+  }
+}
 .skills--heading {
   margin-bottom: 70px;
 }
@@ -111,6 +146,12 @@ html {
 }
 .skills--logo:hover {
   background-color: rgb(64, 127, 136);
+}
+@media only screen and (max-width: 800px) {
+  .skills--logo {
+    height: 32px;
+    width: 32px;
+  }
 }
 .skills--gallery {
   justify-content: space-between;
@@ -123,6 +164,11 @@ html {
   align-items: center;
   flex-direction: column;
   font-family: "Roboto Slab", serif;
+}
+@media only screen and (max-width: 800px) {
+  .skills--container {
+    font-size: 20px;
+  }
 }
 .skills--image {
   margin: 5px;
@@ -162,10 +208,20 @@ html {
   width: 15%;
   justify-content: space-around;
 }
+@media only screen and (max-width: 800px) {
+  .about-me--logo {
+    flex-direction: column;
+  }
+}
 .about-me--logo--container {
   display: flex;
   justify-content: space-evenly;
-  width: 30%;
+  width: 40%;
+}
+@media only screen and (max-width: 800px) {
+  .about-me--logo--container {
+    width: 70%;
+  }
 }
 .about-me--logo--image {
   width: 32px;
@@ -175,7 +231,7 @@ html {
 .project-gallery {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   align-items: center;
 }
 .project-image {
@@ -183,11 +239,22 @@ html {
   flex-direction: column;
   margin: 0px 20px;
 }
+@media only screen and (max-height: 800px) {
+  .project-image {
+    height: 100px;
+    width: 200px;
+  }
+}
 .project-row {
   display: flex;
   flex-direction: row;
   width: 50%;
   margin: 20px;
+}
+@media only screen and (max-width: 800px) {
+  .project-row {
+    width: 100%;
+  }
 }
 .project-row--text {
   width: 50%;

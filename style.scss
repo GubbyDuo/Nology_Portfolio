@@ -11,10 +11,17 @@ html {
     align-items: center;
     height: 80px;
     background-color: rgb(107, 201, 245);
-    justify-content: flex-end;
+    @media only screen and (min-width: 800px) {
+        justify-content: flex-end;
+
+        width: 100%;
+    }
+    @media only screen and (max-width: 801px) {
+        justify-content: center;
+        width: 100vw;
+    }
     position: fixed;
     top: 0;
-    width: 100%;
 }
 
 .navbar {
@@ -29,6 +36,9 @@ html {
         margin: 0px 1px;
         height: 50px;
         width: 100%;
+        @media only screen and (max-width: 800px) {
+            margin: 10%;
+        }
     }
 
     &--link {
@@ -79,17 +89,26 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @media only screen and (max-width: 800px) {
+            height: 150vh;
+        }
     }
     &--three {
         background-color: rgb(55, 133, 211);
         flex-direction: column;
         justify-content: center;
+        @media only screen and (max-width: 800px) {
+            height: 150vh;
+        }
     }
     &--four {
         height: 150vh;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        @media only screen and (max-width: 800px) {
+            height: 300vh;
+        }
     }
 }
 
@@ -104,6 +123,9 @@ html {
         height: 200px;
         width: 30%;
         font-family: "Libre Baskerville", serif;
+        @media only screen and (max-width: 800px) {
+            font-size: 14px;
+        }
     }
 
     &--heading {
@@ -113,9 +135,12 @@ html {
         &:hover {
             background-color: rgb(64, 127, 136);
         }
-
         height: 64px;
         width: 64px;
+        @media only screen and (max-width: 800px) {
+            height: 32px;
+            width: 32px;
+        }
     }
     &--gallery {
         justify-content: space-between;
@@ -128,6 +153,9 @@ html {
         align-items: center;
         flex-direction: column;
         font-family: "Roboto Slab", serif;
+        @media only screen and (max-width: 800px) {
+            font-size: 20px;
+        }
     }
     &--image {
         margin: 5px;
@@ -167,11 +195,17 @@ html {
         display: flex;
         align-items: center;
         width: 15%;
+        @media only screen and (max-width: 800px) {
+            flex-direction: column;
+        }
         justify-content: space-around;
         &--container {
             display: flex;
             justify-content: space-evenly;
-            width: 30%;
+            width: 40%;
+            @media only screen and (max-width: 800px) {
+                width: 70%;
+            }
         }
         &--image {
             width: 32px;
@@ -183,17 +217,24 @@ html {
     &-gallery {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
         align-items: center;
     }
     &-image {
         display: flex;
         flex-direction: column;
         margin: 0px 20px;
+        @media only screen and (max-height: 800px) {
+            height: 100px;
+            width: 200px;
+        }
     }
     &-row {
         display: flex;
         flex-direction: row;
+        @media only screen and (max-width: 800px) {
+            width: 100%;
+        }
         width: 50%;
         margin: 20px;
         &--text {
