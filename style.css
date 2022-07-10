@@ -120,6 +120,34 @@ html {
   margin: 5px;
 }
 
+.about-me--section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.about-me--para {
+  width: 35%;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+}
+.about-me--logo {
+  display: flex;
+  align-items: center;
+  width: 15%;
+  justify-content: space-around;
+}
+.about-me--logo--container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+.about-me--logo--image {
+  width: 32px;
+  height: 32px;
+}
+
 h1 {
   text-align: center;
 }
