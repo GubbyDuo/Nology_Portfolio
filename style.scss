@@ -213,6 +213,7 @@ html {
         }
     }
 }
+
 .project {
     &-gallery {
         display: flex;
@@ -228,6 +229,12 @@ html {
             height: 100px;
             width: 200px;
         }
+        &--googleBooks {
+            height: 200px;
+            width: 400px;
+        }
+        height: 200px;
+        width: 400px;
     }
     &-row {
         display: flex;
@@ -248,6 +255,11 @@ html {
             justify-content: flex-start;
         }
     }
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 h1 {

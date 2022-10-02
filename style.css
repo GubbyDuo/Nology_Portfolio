@@ -238,12 +238,18 @@ html {
   display: flex;
   flex-direction: column;
   margin: 0px 20px;
+  height: 200px;
+  width: 400px;
 }
 @media only screen and (max-height: 800px) {
   .project-image {
     height: 100px;
     width: 200px;
   }
+}
+.project-image--googleBooks {
+  height: 200px;
+  width: 400px;
 }
 .project-row {
   display: flex;
@@ -265,6 +271,11 @@ html {
 }
 .project-row--left {
   justify-content: flex-start;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 h1 {

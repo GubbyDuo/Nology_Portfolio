@@ -134,62 +134,77 @@
             <div class="about-me--contact">
                 <h1>Contact me</h1>
                 <div class="about-me--logo--container">
-                    <div class="about-me--logo">
-                        <img
-                            class="about-me--logo--image"
-                            src="./Images/github-icon.png"
-                            alt=""
-                        />
-                        <p>Github</p>
-                    </div>
-                    <div class="about-me--logo">
-                        <img
-                            class="about-me--logo--image"
-                            src="./Images/linkedin-icon.png"
-                            alt=""
-                        />
-                        <p>LinkedIn</p>
-                    </div>
-                    <div class="about-me--logo">
-                        <img
-                            class="about-me--logo--image"
-                            src="./Images/Email-Icon.png"
-                        />
-                        <p>Email</p>
-                    </div>
+                    <a href="https://github.com/GubbyDuo">
+                        <div class="about-me--logo">
+                            <img
+                                class="about-me--logo--image"
+                                src="./Images/github-icon.png"
+                                alt=""
+                            />
+                            <p class="link">Github</p>
+                        </div>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/samuel-gubbins-029266203/"
+                    >
+                        <div class="about-me--logo">
+                            <img
+                                class="about-me--logo--image"
+                                src="./Images/linkedin-icon.png"
+                                alt=""
+                            />
+                            <p class="link">LinkedIn</p>
+                        </div>
+                    </a>
+                    <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=samuel.gubbins@gmail.com"
+                    >
+                        <div class="about-me--logo">
+                            <img
+                                class="about-me--logo--image"
+                                src="./Images/Email-Icon.png"
+                            />
+                            <p class="link">Email</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
         <section class="section section--four" id="projects">
             <h1>My Projects</h1>
             <div class="project-gallery">
-                <div class="project-row project-row--left">
+                <div
+                    onclick="window.open(`https://github.com/GubbyDuo/GoogleBooksAPI`);"
+                    class="project-row project-row--left"
+                >
                     <img
-                        class="project-image"
-                        src="https://via.placeholder.com/400x200"
+                        class="project-image--googleBooks project-image"
+                        src="./Images/GoogleBooks.png"
                         alt=""
                     />
                     <div class="project-row--text">
-                        <h1>Lorem, ipsum.</h1>
+                        <h1>Google Books API</h1>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Necessitatibus earum aspernatur culpa,
-                            sapiente delectus velit sit beatae neque esse sint.
+                            A web page which uses the google books API to query
+                            data based on user input.
                         </p>
                     </div>
                 </div>
-                <div class="project-row project-row--right">
+                <div
+                    onclick="window.open(`https://www.github.com/GubbyDuo/Nology-Eshop`);"
+                    class="project-row project-row--right"
+                >
                     <div class="project-row--text">
-                        <h1>Lorem, ipsum.</h1>
+                        <h1>React eShop</h1>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Necessitatibus earum aspernatur culpa,
-                            sapiente delectus velit sit beatae neque esse sint.
+                            An eShop template using React.js to implement state
+                            for the user's cart, as well as components for each
+                            product page.
                         </p>
                     </div>
                     <img
                         class="project-image"
-                        src="https://via.placeholder.com/400x200"
+                        src="./Images/React_EShop.png"
                         alt=""
                     />
                 </div>
