@@ -133,7 +133,7 @@ html {
     }
     &--logo {
         &:hover {
-            background-color: rgb(64, 127, 136);
+            background-color: rgb(64, 127, 136) !important;
         }
         height: 64px;
         width: 64px;
@@ -237,7 +237,7 @@ html {
         width: 400px;
     }
     &-row {
-        display: flex;
+        display: grid;
         flex-direction: row;
         @media only screen and (max-width: 800px) {
             width: 100%;
@@ -245,14 +245,19 @@ html {
         width: 50%;
         margin: 20px;
         &--text {
-            width: 50%;
+            width: 100%;
             text-align: center;
         }
         &--right {
             justify-content: flex-end;
+            grid-template-columns: 50% 50%;
         }
         &--left {
             justify-content: flex-start;
+            grid-template-columns: 50% 50%;
+        }
+        &--image {
+            justify-content: center;
         }
     }
 }

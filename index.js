@@ -32,7 +32,7 @@ function iconClick(iconId) {
             if (clickedIcon) {
                 console.log(clickedIcon);
                 document.getElementById(clickedIcon).style.backgroundColor =
-                    "inherit";
+                    "initial";
             }
             document.getElementById(iconId).style.backgroundColor = "gray";
             break;
@@ -42,7 +42,7 @@ function iconClick(iconId) {
             if (clickedIcon) {
                 console.log(clickedIcon);
                 document.getElementById(clickedIcon).style.backgroundColor =
-                    "inherit";
+                    "initial";
             }
             document.getElementById(iconId).style.backgroundColor = "gray";
             break;
@@ -52,7 +52,7 @@ function iconClick(iconId) {
             if (clickedIcon) {
                 console.log(clickedIcon);
                 document.getElementById(clickedIcon).style.backgroundColor =
-                    "inherit";
+                    "initial";
             }
             document.getElementById(iconId).style.backgroundColor = "gray";
             break;
@@ -62,7 +62,7 @@ function iconClick(iconId) {
             if (clickedIcon) {
                 console.log(clickedIcon);
                 document.getElementById(clickedIcon).style.backgroundColor =
-                    "inherit";
+                    "initial";
             }
             document.getElementById(iconId).style.backgroundColor = "gray";
             break;
@@ -72,7 +72,27 @@ function iconClick(iconId) {
             if (clickedIcon) {
                 console.log(clickedIcon);
                 document.getElementById(clickedIcon).style.backgroundColor =
-                    "inherit";
+                    "initial";
+            }
+            document.getElementById(iconId).style.backgroundColor = "gray";
+            break;
+        case "javaIcon":
+            iconClickText =
+                "I have used java in both object oriented and functional programming. My first experience with java was using a game engine called Jmonkey, since then I have developed a much deeper understanding of object oriented programming.";
+            if (clickedIcon) {
+                console.log(clickedIcon);
+                document.getElementById(clickedIcon).style.backgroundColor =
+                    "initial";
+            }
+            document.getElementById(iconId).style.backgroundColor = "gray";
+            break;
+        case "springIcon":
+            iconClickText =
+                "I have used the Spring boot, a Java framework, to create example microservices which integrate with Rest APIs and SQL databases. Spring boot is one of the latest technologies I have learnt, and am still currently developing my skills with.";
+            if (clickedIcon) {
+                console.log(clickedIcon);
+                document.getElementById(clickedIcon).style.backgroundColor =
+                    "initial";
             }
             document.getElementById(iconId).style.backgroundColor = "gray";
             break;
@@ -82,7 +102,7 @@ function iconClick(iconId) {
     if (clickedIcon == iconId) {
         iconClickText = "";
         clickedIcon = "";
-        document.getElementById(iconId).style.backgroundColor = "inherit";
+        document.getElementById(iconId).style.backgroundColor = "initial";
     } else {
         clickedIcon = iconId;
     }

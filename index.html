@@ -108,6 +108,28 @@
                     />
                     <p>Git</p>
                 </div>
+
+                <div class="skills skills--container">
+                    <img
+                        onclick="iconClick(this.id)"
+                        id="javaIcon"
+                        class="skills--logo"
+                        src="./Images/java_logo.png"
+                        alt=""
+                    />
+                    <p>Java</p>
+                </div>
+
+                <div class="skills skills--container">
+                    <img
+                        onclick="iconClick(this.id)"
+                        id="springIcon"
+                        class="skills--logo"
+                        src="./Images/springboot-icon.png"
+                        alt=""
+                    />
+                    <p>Spring Boot</p>
+                </div>
             </div>
             <div class="skills--subtext" id="skillsText"></div>
         </section>
@@ -177,11 +199,13 @@
                     onclick="window.open(`https://github.com/GubbyDuo/GoogleBooksAPI`);"
                     class="project-row project-row--left"
                 >
-                    <img
-                        class="project-image--googleBooks project-image"
-                        src="./Images/GoogleBooks.png"
-                        alt=""
-                    />
+                    <div class="project-row--image">
+                        <img
+                            class="project-image--googleBooks project-image"
+                            src="./Images/GoogleBooksBetter.png"
+                            alt=""
+                        />
+                    </div>
                     <div class="project-row--text">
                         <h1>Google Books API</h1>
                         <p>
@@ -202,41 +226,53 @@
                             product page.
                         </p>
                     </div>
-                    <img
-                        class="project-image"
-                        src="./Images/React_EShop.png"
-                        alt=""
-                    />
+                    <div class="project-row--image">
+                        <img
+                            class="project-image"
+                            src="./Images/React_EShop.png"
+                            alt=""
+                        />
+                    </div>
                 </div>
-                <div class="project-row project-row--left">
-                    <img
-                        class="project-image"
-                        src="https://via.placeholder.com/400x200"
-                        alt=""
-                    />
+                <div
+                    onclick="window.open(`https://github.com/GubbyDuo/Nology_Calculator`);"
+                    class="project-row project-row--left"
+                >
+                    <div class="project-row--image">
+                        <img
+                            class="project-image"
+                            src="./Images/Calculator.PNG"
+                            alt=""
+                        />
+                    </div>
                     <div class="project-row--text">
-                        <h1>Lorem, ipsum.</h1>
+                        <h1>Basic Calculator</h1>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Necessitatibus earum aspernatur culpa,
-                            sapiente delectus velit sit beatae neque esse sint.
+                            A basic calculator which is able to add, subtract,
+                            divide and multiply numbers. Javascript is used for
+                            the back-end and html/css is used for the display.
                         </p>
                     </div>
                 </div>
-                <div class="project-row project-row--right">
+                <div
+                    onclick="window.open(`https://github.com/GubbyDuo/CLI_Wordle`);"
+                    class="project-row project-row--right"
+                >
                     <div class="project-row--text">
-                        <h1>Lorem, ipsum.</h1>
+                        <h1>Java Wordle</h1>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Necessitatibus earum aspernatur culpa,
-                            sapiente delectus velit sit beatae neque esse sint.
+                            A version of the popular browser game 'Wordle'
+                            written in Java through functional programming and
+                            is interacted with using the command line interface.
                         </p>
                     </div>
-                    <img
-                        class="project-image"
-                        src="https://via.placeholder.com/400x200"
-                        alt=""
-                    />
+                    <div class="project-row--image">
+                        <img
+                            class="project-image"
+                            src="./Images/JavaWordle.PNG"
+                            alt=""
+                        />
+                    </div>
                 </div>
             </div>
         </section>

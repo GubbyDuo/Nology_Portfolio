@@ -145,7 +145,7 @@ html {
   width: 64px;
 }
 .skills--logo:hover {
-  background-color: rgb(64, 127, 136);
+  background-color: rgb(64, 127, 136) !important;
 }
 @media only screen and (max-width: 800px) {
   .skills--logo {
@@ -252,7 +252,7 @@ html {
   width: 400px;
 }
 .project-row {
-  display: flex;
+  display: grid;
   flex-direction: row;
   width: 50%;
   margin: 20px;
@@ -263,14 +263,19 @@ html {
   }
 }
 .project-row--text {
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 .project-row--right {
   justify-content: flex-end;
+  grid-template-columns: 50% 50%;
 }
 .project-row--left {
   justify-content: flex-start;
+  grid-template-columns: 50% 50%;
+}
+.project-row--image {
+  justify-content: center;
 }
 
 a {
